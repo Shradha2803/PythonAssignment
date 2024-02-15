@@ -1,0 +1,8 @@
+"# Write results to CSV using SQL"
+"with open('output_sql.csv', 'w') as f:"
+"f.write(""Customer;Age;Item;Quantity\n"")"
+"for row in results_sql:"
+"f.write(f""{row[0]};{row[1]};{row[2]};{row[3]}\n"")"
+""
+"# Write results to CSV using Pandas"
+"df_filtered_pandas.to_csv('output_pandas.csv', sep=';', index=False)"
